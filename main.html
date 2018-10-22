@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us" ng-app="myApp">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mindfulness Timer</title>
+    <title>Meditation Timer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <style>
+        html,
+        body,
+        input,
+        select,
+        textarea {
+            font-size: 1.05em;
+        }
+    </style>
+
+    <!-- load angular via CDN -->
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="/src/JS/main.js"></script>
 </head>
+
 <body>
-  
-  <script src="src\JS\main.js"></script>
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AngularJS</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/timerAnimation"><i></i> Second</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div ng-view></div>
+
+    </div>
+
+    <button type="button" class="btn btn-primary">5 mins</button>
+    <button type="button" class="btn btn-primary">10 mins</button>
+    <button type="button" class="btn btn-primary">15 mins</button>
+    <button type="button" class="btn btn-primary">20 mins</button>
+    <button type="button" class="btn btn-primary">25 mins</button>
+    <button type="button" class="btn btn-primary">30 mins</button>
+
 </body>
+
 </html>
