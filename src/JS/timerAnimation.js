@@ -26,14 +26,14 @@ var elements = document.getElementsByClassName("animatedCircle");
 // var tem2 = elements[0].parentNode.removeChild(elements[0]);
 // console.log(tem2);
 
-function removeAnimation() {
-  elements[0].parentNode.removeChild(elements[0]);
-}
+// function removeAnimation() {
+//   elements[0].parentNode.removeChild(elements[0]);
+// }
 
-function timeoutAnimation(totalTime) {
-  setTimeout(removeAnimation, totalTime);
-}
-timeoutAnimation(totalTime);
+// function timeoutAnimation(totalTime) {
+//   setTimeout(removeAnimation, totalTime);
+// }
+// timeoutAnimation(totalTime);
 
 // setTimeout(removeAnimation(), 15000);
 
